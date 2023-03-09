@@ -60,5 +60,5 @@ function copy() {
 
 }
 function copyS() {
-    navigator.clipboard.writeText(document.getElementById("passowrd-b").innerText)
+    navigator.clipboard.writeText(document.getElementById("password-b").innerText)
 }
