@@ -17,7 +17,7 @@ function generateBtn() {
         password.push(pass)
         if (x === 0) {
             document.getElementById("password-a").innerHTML = password[x]
-        } else (x === 1)
+        } else 
         { document.getElementById("passowrd-b").innerHTML = password[x] }
     }
 
@@ -36,7 +36,7 @@ function setArray() {
 }
 function switchSpecials() {
     password = []
-    generateBtn
+    generateBtn()
     if (specialCha === false) {
         specialCha = true
     } else if (specialCha === true) {
