@@ -2,32 +2,33 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <h1>Generate a</h1>
-    <h2> Random Password</h2>
+  <h1>Generate a</h1>
+  <h2>Random Password</h2>
 
+  <button id="generate-btn" onclick="generateBtn()">Generate Password</button>
 
-    <button id="generate-btn" onclick="generateBtn()">Generate Password</button>
-    <div class="check-boxes">
-        <div class="checkbox">
-            <input type="checkbox" name="no-numbers" onclick="switchNumbers()">
-            <label for="no-numbers" class="labels">No numbers</label>
-        </div>
-        <div class="checkbox">
-            <input class="checkbox" type="checkbox" name="no-specials" onclick="switchSpecials()">
-            <label class="checkbox" for="no-specials" class="labels">No Special Characters</label>
-        </div>
-    </div>
-    <div class="generated-passwords">
-        <button class="generated" id="password-a" onclick="copy()"></button>
-        <button class="generated" id="passowrd-b" onclick="copyS()"></button>
+  <div class="check-boxes">
+    <div class="checkbox">
+      <input type="checkbox" id="no-numbers" name="no-numbers">
+      <label for="no-numbers" class="lebals" onclick="switchNumbers()">No numbers</label>
     </div>
 
-    <script src="index.js"></script>
+    <div class="checkbox">
+      <input type="checkbox" id="no-specials" name="no-specials">
+      <label for="no-specials" class="lebals" onclick="switchSpecials()">No Special Characters</label>
+    </div>
+  </div>
 
+  <div class="generated-passwords">
+    <button class="generated" id="password-a" onclick="copy()">Generate Password</button>
+    <button class="generated" id="password-b" onclick="copyS()">Generate Password</button>
+  </div>
+
+  <script src="index.js"></script>
 
 </body>
 
