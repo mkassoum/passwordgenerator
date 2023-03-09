@@ -1,71 +1,120 @@
 body {
-    margin: 0;
-    background-color: #040150;
-    margin-left: 10px
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 h1 {
-    color: white;
-    margin-bottom: 0;
-
+  color: #1a1a1a;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
 }
 
 h2 {
-    color: #36FFD1;
-    margin-left: 100px;
-    margin-top: 5px;
+  color: #1a1a1a;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 #generate-btn {
-    margin-left: 10px;
-    display: flex;
-    color: white;
-    background-color: #36FFD1;
-    padding: 5px 8px;
-    border: none;
-    border-radius: 4px;
-    min-width: 200px;
-    min-height: 25px;
-    align-content: center;
-
-}
-
-div {
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
-    width: 100%;
-    border-top: solid 1px lightblue;
-
-
-
-}
-
-.generated {
-    background-color: #55539e;
-    min-width: 200px;
-    margin: 40px;
-    min-height: 25px;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    align-content: center;
-    color: #36FFD1;
-    border: solid 0.5px white;
-}
-
-@media (width < 550px) {
-    div {
-        flex-direction: column;
-    }
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 24px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 300px;
 }
 
 .check-boxes {
-    display: flex;
-    color: white;
-    font-weight: bold;
-    padding: 0;
-    width: 100%;
-    border: none;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.checkbox input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #1a1a1a;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.checkbox input[type=checkbox]:checked::before {
+  content: "\2714";
+  font-size: 20px;
+  color: #1a1a1a;
+  line-height: 22px;
+  text-align: center;
+}
+
+.lebals {
+  color: #1a1a1a;
+  font-size: 24px;
+}
+
+.generated-passwords {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.generated {
+  background-color: #fff;
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+  color: #1a1a1a;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.generated:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  #generate-btn {
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .lebals {
+    font-size: 20px;
+  }
+
+  .generated {
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 8px 16px;
+  }
 }
